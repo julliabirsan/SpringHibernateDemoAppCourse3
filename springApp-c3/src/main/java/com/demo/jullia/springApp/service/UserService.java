@@ -12,6 +12,7 @@ public class UserService {
 
     @Autowired
     UserDao userDao;
+    private int x;
 
     public void save(String email, String password){
         userDao.save(email,password);
